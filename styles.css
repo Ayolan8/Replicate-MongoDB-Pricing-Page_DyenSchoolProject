@@ -1,0 +1,1162 @@
+html {
+    font-size: 12px;
+    /* height: 2000px; */
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.body {
+    width: 100vw;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.main {
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* alert at the top of the page */
+.alert {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    color: white;
+    background-color: #00684A;
+    font-size: 1.2rem;
+    gap: 15px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    cursor: pointer;
+    /* z-index: 2; */
+}
+
+.alert-btn {
+    border: 1px solid black;
+    background-color: #a8f906;
+    color: #024230;
+    align-self: center;
+    text-align: center;
+    padding: 3px;
+    width: 50px;
+    font-variant: small-caps;
+    font-weight: bold;
+    border-radius: 18px;
+}
+
+header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 13vh;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-bottom: 1px solid #024230;
+}
+
+/* site logo */
+.logo-img {
+    width: 120px;
+}
+
+.search-icon-SD {
+    display: none;
+    width: 20px;
+}
+
+.flex-anchor {
+    display: flex;
+    align-items: center;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    margin-left: -10%;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 60px;
+    margin-left: 45px;
+}
+
+nav a {
+    font-size: 1.6rem;
+    color: black;
+}
+
+.left-div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+}
+
+.open-dropdown-on-small-device {
+    display: none;
+}
+
+#vertical-elipsis {
+    display: none;
+}
+
+.support-link, .signin-link {
+    font-size: 1.6rem;
+    color: black;
+}
+
+.signin-link-div {
+    display: flex;
+    align-items: center;
+}
+
+nav a:hover,
+.signin-link:hover,
+.support-link:hover {
+    color: #00684A;
+}
+
+.try-btn {
+    background-color: lime;
+    width: 150px;
+    min-height: 45px;
+    font-weight: bold;
+    margin-left: 40px;
+    gap: 20px;
+}
+
+.try-btn:hover {
+    border-radius: 18px;
+}
+
+.open-dropdown, .close-dropdown {
+    font-size: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;    
+    z-index: 999;
+}
+
+/* main contents */
+
+/* sticky card at the bottom right side of the page */
+.sticky-box {
+    position: fixed;
+    display: flex;
+    bottom: 20%;
+    right: 0;
+    height: 150px;
+    border-radius: 8px;
+    background-color: rgb(226, 243, 226);
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 0.6px 2px 0.2px rgb(221, 209, 209);
+    flex-direction: column;
+    padding: 10px;
+    width: 140px;
+    z-index: 99;
+}
+
+.sticky-box p {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.sticky-box button {
+    border: 1.5px solid green;
+    padding: 5px;
+    height: 40px;
+    width: 100px;
+    border-radius: 18px;
+    font-size: 12.6px;
+    cursor: pointer;
+}
+
+.sticky-box button:hover {
+    background-color: green;
+    color: white;
+}
+
+
+/* pricing section */
+
+
+.pricing-section {
+    background: linear-gradient( #faf7f7, #f2f9fe, aliceblue, whitesmoke);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+   
+}
+
+.pricing-section h1, 
+.pricing-section .pricing-text{
+    text-align: center;
+}
+
+.pricing-section h1 {
+    color:#00684A;
+    font-size: 2.9rem;
+}
+
+.pricing-section .pricing-text {
+    font-size: 2rem;
+    margin-top: -4px;
+}
+
+.box-menu {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-end;
+    max-width: 100%;
+    width: 680px;
+    margin-top: 25px;
+    padding-bottom: 8px;
+}
+
+.atlas-div, .database-div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0.4px 0.4px 3px 0px rgba(1,1,1,0.4);
+    background-color: white;
+    border-radius: 4px;
+    height: 100px;
+    padding-top: 0px;
+    padding-left: 30px;
+    padding-right: 20px;
+    gap: 10px;
+}
+.atlas-div {
+    border-left: 3px solid green;
+}
+.atlas-div h3, .database-div h3 {
+    font-size: 1.7rem;
+}
+
+.atlas-div p, .database-div p {
+    font-size: 1.5rem;
+    margin-top: -16px;
+}
+
+.fa-server {
+    font-size: 2.7rem;
+    color: #00684A;
+}
+
+/* pricing section ends here */
+
+/* mongoDB Atlas styles */
+
+
+
+.MongoDB-atlas {
+    background: white;
+    padding-top: 20px;
+    margin: auto;
+    width: 80%;    
+}
+
+.MongoDB-atlas h1 {
+    font-size: 2.6rem;
+    text-align: center;
+}
+
+.MongoDB-atlas .price-text {
+    font-size: 1.6rem;
+    margin-top: -5px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.MongoDB-atlas-flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;  
+    width: 100%;  
+}
+
+.outer-div-card-1,
+.outer-div-card-2,
+.outer-div-card-3{
+    /* min-height: 680px; */
+    width: 100%;
+    border-radius: 6px;
+}
+
+.serverless-box, .dedicated-box, .shared-box {
+    /* width: 320px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 40px 40px 40px;
+    gap: 25px;
+    box-shadow: 0px 0px 4px 0px ;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    width: 100%;
+    min-height: 680px;
+}
+
+.serverless-box, .shared-box {
+    padding-top: 45px;
+}
+
+/* .outer-div-dedicated, .serverless-box, .shared-box { */
+
+.dedicated-box {
+    box-shadow: 0px 0px 4px 0px #26cb26;;
+    min-height: 650px;
+}
+
+.recommended {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(66, 62, 62);
+    font-size: 1.3rem;
+    width: 100%;
+    height: 25px;
+}
+
+
+.icon-div {
+    display: flex;
+    gap: 5px;
+}
+
+.icon-div h3 {
+    font-size: 2.1rem;
+    /* font-weight: bold; */
+}
+
+.link-item {
+    font-size: 1.4rem;
+    margin-top: -36px;
+}
+
+.price-link {
+    font-size: 1.7rem;
+    border-bottom: 2px dotted black;
+    padding-bottom: 2px;
+    color: black;
+}
+
+.hr {
+    width: 100%;
+    height: 1px;
+    background: grey;
+    opacity: 0.5;
+}
+
+.btn {
+    width: 110px;
+    padding: 10px;
+    font-size: 17px;
+    /* margin-top: 5px; */
+    cursor: pointer;
+    border: 1px solid rgb(19, 160, 19);
+    border-radius: 5px;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    /* box-shadow: 1px 0px 5px 0.3px grey; */
+}
+
+.signup-btn, .tested-btn {
+    background-color: white;
+    color: #26cb26;
+}
+
+.signup-btn-d {
+    background-color: #26cb26;
+    color: white;
+}
+
+.tested-btn {
+    width: 130px;
+}
+
+small {
+    font-size: 1.18rem;
+}
+
+.price-info {
+    font-size: 1.4rem;
+    text-align: left;
+}
+
+.ul-div {
+    width: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+.MongoDB-list {
+    padding-left: 10px;
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.MongoDB-list li {
+    margin-left: -10px;
+    list-style-type: symbols();
+    font-size: 17px;
+    background-image: url('./images/check-solid-green.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 14px;
+    padding-left: 25px;
+    margin-bottom: 20px;
+}
+
+.list-link {
+    font-size: 16px;
+    border-bottom: 2px dotted black;
+    color: black;
+}
+
+
+.view-price {
+    font-size: 17px;
+    color: green;
+    font-weight: bold;
+}
+
+.other-contents {
+    width: 80%; 
+    margin: auto;
+}
+
+.plan-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25vh;
+}
+
+.plan-section a {
+    font-size: 25px;
+    color: #048b65;
+    font-weight: bold;
+}
+
+.plan-section a:hover {
+    text-decoration: underline;
+}
+
+.contact-box {
+    width: 100%;
+    background-color: rgb(66, 62, 62);
+    color: white;
+    height: 30vh;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 10px;
+}
+
+.contact-box-text {
+    width: 60%;
+}
+
+.contact-box h2 {
+    font-size: 30px;
+}
+
+.contact-box p {
+    font-size: 23px;
+    margin-top: -8px;
+}
+
+.contact-box button {
+    width: 150px;
+    height: 60px;
+    font-size: 17px;
+    background-color: #26cb26;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.customize-box {
+    width: 90%;
+    margin: auto;
+}
+
+.customize-box h2 {
+    text-align: center;
+    font-size: 2.3rem;
+    color:#00684A;
+    margin-top: 13vh;
+    margin-bottom: 60px;
+}
+
+.customize-box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 390px;
+    width: 370px;
+    border-top: 1px solid rgba(109, 106, 106, .1);
+    border-left:1px solid rgba(109, 106, 106, .36);
+    border-right:1px solid rgba(109, 106, 106, .36);
+    border-bottom: 1px solid rgba(109, 106, 106, .36);
+    border-radius: 4px;
+    padding: 35px;
+}
+
+.flex-box:hover {
+    transform: translateY(-4px);
+}
+
+.flex-box h3 {
+    font-size: 1.9rem;
+    color: #00684A;
+    
+}
+
+.flex-box p {
+    margin-top: -2px;
+    font-size: 1.6rem;
+    color: black;
+
+}
+
+.flex-box a {
+    color: #048b65;
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.flex-box > i {
+    font-size: 1.3rem;
+    color: #048b65;
+    
+}
+
+.cta-div{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    align-items: center;
+    background-color: whitesmoke;
+    height: 30vh;
+    margin-top: 60px;
+}
+
+.cta-div h2{
+    font-size: 2.4rem;
+    color: #00684A;
+}
+
+.cta-div p {
+    font-size: 1.7rem;
+    margin-top: -10px;
+}
+
+.cta-div button {
+    width: 150px;
+    background-color: #26cb26;
+    color: white;
+}
+
+/* Base styles for the footer */
+footer {
+    background-color: #0a0909;
+    color: white;
+    padding: 90px;
+    font-size: 1.3rem;
+
+}
+
+.site-footer {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+/* Footer links */
+.site-footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.site-footer ul li, .footer-links h4 {
+    margin-bottom: 40px;
+}
+
+.footer-links h4 {
+    margin-top: -2px;
+    font-size: 17px;
+}
+
+.site-footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.footer-logo img {
+    width: 150px;
+}
+
+.select-lang {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    
+}
+
+select {
+    font-size: 16px;
+    color: white;
+    background-color: #0a0909;
+    border: none;
+}
+
+option {
+    background-color: #00684A;
+    color: black;
+    width: 200px;
+    margin: 10px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: flex-start;
+    gap: 100px;
+    text-align: left;
+}
+
+.copyright {
+    margin-left: 300px;
+    opacity: 0.5;
+}
+
+@media (max-width: 1280px){
+
+    header {
+        overflow-x: auto;
+    }
+
+    .dedicated-box{
+        min-height: 605px;
+    }
+
+    .MongoDB-atlas{
+        width: 100%;
+    }
+
+    .support-link-div,
+    .signin-link-div,
+    .try-btn {
+        display: none;
+    }
+
+    .hidden-on-media1285 {
+        display: none;
+    }
+
+    .show-dropdown {
+        position: fixed;
+        top: 10vh;
+        right: 70px;
+        z-index: 2222;  
+        background-color: whitesmoke;
+        border-radius: 10px;
+        box-shadow: 2px 7px 8px 4px rgb(226, 220, 220);
+        height: 190px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .show-dropdown p,
+    .show-dropdown a {
+        font-size: 1.5rem;
+        margin-top: -3px;
+    }
+
+    .show-dropdown a {
+        color: black;
+    }
+
+    .show-dropdown button {
+        width: 140px;
+        height: 45px;
+        background-color: #1df81d;
+        font-weight: bold;
+        border: 1px solid #00684A;
+        font-size: 1.2rem;
+    }
+
+    .show-dropdown button:hover {
+        border-radius: 18px;
+    }
+
+    #mediaScreen1285{
+        background-color: whitesmoke; 
+        box-shadow: 2p x 7px 8px 4px rgb(186, 183, 183);
+    }   
+
+    .nav-container {
+        margin-left: 1%;
+    }
+
+    .left-div {
+        justify-content: flex-end;
+        gap: 30px;
+    } 
+
+    #vertical-elipsis {
+        display: block;
+        width: 25px;
+        text-align: center;
+        padding: 9px;
+    }
+
+    #vertical-elipsis:hover,
+    #vertical-elipsis:active {
+        background-color: rgb(219, 216, 216);
+        border-radius: 20px;
+    }
+
+    .copyright {
+        margin-left: 150px;
+    }
+}
+
+@media (min-width: 1024px){
+    .dedicated-box{
+        height: 660px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .MongoDB-atlas{
+        width: 80%;
+    }
+
+    .MongoDB-list {
+        height: auto;
+    }
+
+    #mediaScreen1285 {
+        display: none;
+    }
+
+    .sticky-box {
+        bottom: 20%;
+        right: 0;
+        height: 100px;
+        border-radius: 8px;
+        padding: 3px;
+        width: 130;
+        z-index: 18;
+    }
+    
+    .sticky-box p {
+        text-align: center;
+        font-size: 13px;
+    }
+    
+    .sticky-box button {
+        border: 1.5px solid rgb(62, 223, 62);
+        padding: 2px;
+        height: 30px;
+        width: 80px;
+        border-radius: 9px;
+        font-size: 9.6px;
+        margin-bottom: 8px;
+    }
+    
+    /* bar button */
+
+    .mediaScreen1285{
+        display: none;
+    }
+
+    .bar-btn {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 25px;
+        height: 2.5px;
+        background-color: black;
+        margin: 4px 0;
+        transition: 0.3s;
+    }
+
+    .active .bar1{
+        transform: translate(0, 4px) rotate(-45deg); 
+    }
+
+    .active .bar2 {
+        opacity: 0; 
+    }
+
+    .active .bar3 {
+        transform: translate(0, -8px) rotate(45deg) ;
+    }
+
+    header {
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        right: 0;
+        align-items: flex-start;
+        padding-left: 15px;
+        padding-right: 15px;
+        transition: 0.3s;
+        height: 10vh;
+        z-index: 9;
+        
+    }
+
+    .left-div {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 0;
+        gap: 70px;
+        display: none;
+        transition:  0.8s;
+        z-index: 9;
+    }
+
+    .left-div  .support-link-div {
+        margin-bottom: 10px;
+        margin-top: -58px;
+        font-weight: bold;
+    }
+
+    .support-link-div {
+        display: block;
+    }
+
+    .side-items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .search-icon-SD{
+        display: inline;
+    }
+
+    .signin-link-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 15px;
+        margin-bottom: 53px;
+    }
+
+    .try-btn {
+        display: block;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .signin-link{
+        background-color: rgb(6, 6, 50);
+        width: 100%;
+        text-align: center;
+        height: 45px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .4s;
+    }
+
+    .signin-link:hover {
+        border-radius: 18px;
+    }
+
+    #vertical-elipsis {
+        display: none;
+    }
+
+    .open-dropdown{
+        display: none;
+    }
+
+    .open-dropdown-on-small-device{
+        display: inline;
+    }
+
+    .pricing {
+        border-bottom: 1px solid rgba(1,1,1,0.1);
+        width: 100%;
+        padding-bottom: 16px;
+    }
+
+    .logo-div {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0 15px 0;
+    }
+
+    .nav-container {
+        top: 40px;
+        flex-direction: column;
+        width: 0;
+        margin-left: 0;
+        margin-top: 20px;
+        display: none;
+        transition: 0.8s;
+        z-index: 23;
+    }
+
+    .outer-div-card-1,
+.outer-div-card-2,
+.outer-div-card-3{
+    width: 100%;
+}
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 0;
+        padding-left: -20px;
+        gap: 30px;
+        font-weight: bolder;
+    }
+
+    .flex-anchor {
+        width: 100%;
+        border-bottom: 1px solid rgba(1,1,1,0.1);
+        padding: 4px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 15px;
+    }
+
+    .search-icon {
+        display: none;
+    } 
+    
+    .pricing-section h1 {
+        font-size: 35px;
+    }
+    .pricing-section .pricing-text {
+        font-size: 25px;
+    }
+
+    .pricing-section {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+
+    .box-menu {
+        flex-direction: column;
+        gap: -10px;
+    }
+
+    .database-div, .atlas-div {
+        width: 100%;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .MongoDB-atlas-flexbox{
+        flex-direction: column;
+    }
+
+    .outer-div-card-2 {
+        order: 1;
+    }
+
+    .outer-div-card-1 {
+        width: 100%;
+        order: 2;
+    }
+
+    .outer-div-card-3 {
+        order: 3;
+    }
+
+    .MongoDB-atlas .price-text, .MongoDB-atlas h1 {
+        text-align: left;
+    }
+
+    .other-contents {
+        width: 100%;
+    }
+
+    .contact-box{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+
+    .contact-box-text {
+        width: 100%;
+        height: 300px;
+    }
+
+    .contact-box h2 {
+        font-size: 22px;
+    }
+
+    .contact-box p {
+        font-size: 18px;
+    }
+
+    .cta-div {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .site-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+.footer-logo {
+    flex-direction: row;
+    columns: 2;
+    column-gap: 20%;
+    width: 80%;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 100px;
+}
+
+.select-lang {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+    .footer-links {
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .footer-links ul {
+        columns: 2;
+        column-gap: 5%;
+    }
+
+    .footer-links ul li, 
+    .copyright {
+        font-size: 15px;
+    }
+
+    .copyright {
+        margin-left: 5px;
+    }
+
+    .alert {
+        font-size: 1rem;
+    }
+
+    .pricing-section h1,
+    .MongoDB-atlas h1,
+    .contact-box h2,
+    .customize-box h2,
+    .flex-box h3,
+    .cta-div h2 {
+        font-size: 2.1rem;
+    }
+
+    .pricing-section p, 
+    .MongoDB-atlas p,
+    .contact-box p,
+    .flex-box p,
+    .flex-box a,
+    .cta-div p{
+        font-size: 17px;
+    }
+
+    .atlas-div h3, .database-div h3 {
+        font-size: 18px;
+    }
+
+    .atlas-div p, .atlas-div p {
+        font-size: 16px;
+    } 
+
+    .cta-div button {
+        width: 120px;
+        font-size: 16px;
+    }
+
+}

@@ -534,14 +534,15 @@ small {
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
-    height: 390px;
-    width: 370px;
+    height: 350px;
+    width: 350px;
     border-top: 1px solid rgba(109, 106, 106, .1);
     border-left:1px solid rgba(109, 106, 106, .36);
     border-right:1px solid rgba(109, 106, 106, .36);
     border-bottom: 1px solid rgba(109, 106, 106, .36);
     border-radius: 4px;
-    padding: 35px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .flex-box:hover {
@@ -550,8 +551,11 @@ small {
 
 .flex-box h3 {
     font-size: 1.9rem;
-    color: #00684A;
-    
+    color: #00684A; 
+}
+
+.flex-box-innerBox {
+    height: 200px;
 }
 
 .flex-box p {
@@ -750,11 +754,15 @@ option {
 
     #mediaScreen1285{
         background-color: whitesmoke; 
-        box-shadow: 2p x 7px 8px 4px rgb(186, 183, 183);
+        box-shadow: 2px 7px 8px 4px rgb(186, 183, 183);
     }   
 
     .nav-container {
-        margin-left: 1%;
+        margin-left: -2%;
+    }
+
+    nav {
+        gap:30px
     }
 
     .left-div {
